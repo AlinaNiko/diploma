@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "OpenSans", Arial, Tahoma, sans-serif;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(0,0,0,0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/*--Fonts--*/
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: local("OpenSans-Regular"), url("../fonts/OpenSans-Regular.ttf") format("ttf"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: local("OpenSans-Bold"), url("../fonts/OpenSans-Bold.ttf") format("ttf"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/*--Main-header--*/
+
+.main-header {
+  padding: 33px 0 84px;
+
+  color: #ffffff;
+
+  background: #071441 url("../images/header-background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-wrapper {
+  text-align: center;
+}
+
+.logo,
+.link-icon {
+  fill: #ffffff;
+}
+
+.title {
+  margin-top: 133px;
+
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.title-second-string {
+  display: block;
+  margin-top: 20px;
+  margin-left: 44px;
+}
+
+.links-list {
+  margin-top: 80px;
+}
+
+.links-item-google {
+  margin-top: 14px;
+}
+
+.link {
+  display: flex;
+  width: 100%;
+  padding: 10px 84px;
+
+  font-size: 8px;
+  text-transform: uppercase;
+
+  border-radius: 20px;
+  background-color: #5e3db3;
+  color: #ffffff;
+  transition: all 0.3s ease-out;
+}
+
+.link:hover {
+  background-color: #ffffff;
+  color: #071441;
+}
+
+.link:hover .link-icon {
+  fill: #071441;
+}
+
+
+.link-paragraph {
+  margin-left: 10px;
+}
+
+.link-name {
+  display: block;
+
+  font-weight: 700;
+}
