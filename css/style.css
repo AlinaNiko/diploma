@@ -9,7 +9,7 @@ body {
   font-family: "OpenSans", Arial, Tahoma, sans-serif;
 }
 
-ul, li {
+ul, ol, li {
   list-style-type: none;
 }
 
@@ -144,6 +144,65 @@ a {
 }
 
 
+/*--Main-content--*/
+/*--Athlets--*/
+
+.section-title {
+  margin-top: 20px;
+
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+
+  color: #e7e7e7;
+}
+
+.section-list {
+  position: relative;
+  padding-top: 230px;
+
+  counter-reset: list;
+}
+
+.section-list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 174px;
+  height: 281px;
+  background: url("../images/athlets.png") no-repeat;
+  transform: translateX(-50%);
+}
+
+.section-item {
+  position: relative;
+  padding: 60px 0 50px;
+}
+
+.section-item::before {
+  content: "0" counter(list);
+  counter-increment: list;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+
+  border-bottom: 4px solid #5e3db3;
+}
+
+.first-item {
+  padding-top: 80px;
+}
+
+
+
+
+/*--Media-queries--*/
+
 @media (min-width: 641px) {
   .main-header {
     padding: 39px 0 92px;
@@ -181,7 +240,7 @@ a {
 
   .link {
     justify-content: center;
-    max-width: 310px;
+    min-width: 310px;
     padding: 16px 36px;
 
     font-size: 14px;
