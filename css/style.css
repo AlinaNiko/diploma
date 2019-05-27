@@ -145,7 +145,7 @@ a {
 
 
 /*--Main-content--*/
-/*--Athlets--*/
+/*--Athlets/Players--*/
 
 .section-title {
   margin-top: 16px;
@@ -159,29 +159,31 @@ a {
 }
 
 .section-list {
-  position: relative;
   padding-top: 230px;
 
   counter-reset: list;
 }
 
-.section-list::before {
+.container-image {
+  position: relative;
+}
+
+.container-image::before {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: -305px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.athlets-list::before {
+.container-image-athlets::before {
   width: 174px;
   height: 281px;
   background: url("../images/athlets.png") no-repeat;
 }
 
-.players-list::before {
-  top: 8px;
+.container-image-players::before {
   width: 302px;
   height: 248px;
   background: url("../images/players.png") no-repeat;
@@ -259,6 +261,7 @@ a {
 /*--Media-queries--*/
 
 @media (min-width: 641px) {
+  /*--Main-header--*/
   .main-header {
     padding: 39px 0 92px;
   }
@@ -318,10 +321,91 @@ a {
   .link-paragraph {
     margin-left: 27px;
   }
+
+  /*--Main-content--*/
+  /*--Athlets/Players--*/
+  .container-athlets,
+  .container-players {
+    max-width: 443px;
+  }
+
+  .container-athlets {
+    margin-left: auto;
+  }
+
+  .container-players {
+    margin-right: auto;
+  }
+
+  .section-title {
+    margin-top: 76px;
+
+    font-size: 80px;
+    line-height: 0.75;
+  }
+
+  .section-list {
+    padding-top: 0;
+  }
+
+  .container-image {
+    position: relative;
+  }
+
+  .container-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: auto;
+    transform: translateX(0);
+  }
+
+  .container-image-athlets::before {
+    top: -90px;
+    left: -424px;
+    width: 434px;
+    height: 699px;
+    background: url("../images/athlets-768.png") no-repeat
+  }
+
+  .container-image-players::before {
+    top: -155px;
+    right: -545px;
+    width: 690px;
+    height: 565px;
+    background: url("../images/players-768.png") no-repeat;
+  }
+
+  .section-item {
+    padding: 35px 0;
+  }
+
+  .first-item {
+    background-color: #ffffff;
+  }
+
+  .section-subtitle {
+    padding-left: 30px;
+
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .section-subtitle::before {
+    font-size: 18px;
+    line-height: 1.46;
+  }
+
+  .section-paragraph {
+    font-size: 16px;
+    line-height: 1.75;
+  }
 }
 
 
 @media (min-width: 961px) {
+  /*--Main-header--*/
   .main-header {
     padding: 45px 0 110px;
   }
@@ -352,5 +436,65 @@ a {
 
   .links-list {
     margin-top: 195px;
+  }
+
+  /*--Main-content--*/
+  /*--Athlets/Players--*/
+
+  .container-athlets {
+    max-width: 716px;
+  }
+
+  .container-players {
+    max-width: 755px;
+  }
+
+  .section-title {
+    margin-top: 109px;
+  }
+
+  .container-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: auto;
+    transform: translateX(0);
+  }
+
+  .container-image-athlets::before {
+    top: -250px;
+    left: -600px;
+    width: 566px;
+    height: 908px;
+    background: url("../images/athlets-1920.png") no-repeat;
+  }
+
+  .container-image-players::before {
+    top: -255px;
+    right: -795px;
+    width: 991px;
+    height: 815px;
+    background: url("../images/players-1920.png") no-repeat;
+  }
+
+  .section-list {
+    margin-top: 50px;
+  }
+
+  .section-item {
+    padding: 55px 0;
+  }
+
+  .section-subtitle {
+    padding-left: 32px;
+
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .section-paragraph {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
