@@ -324,16 +324,13 @@ a {
 
   /*--Main-content--*/
   /*--Athlets/Players--*/
-  .container-athlets,
-  .container-players {
-    max-width: 443px;
-  }
-
   .container-athlets {
+    max-width: 443px;
     margin-left: auto;
   }
 
   .container-players {
+    max-width: 400px;
     margin-right: auto;
   }
 
@@ -363,7 +360,7 @@ a {
 
   .container-image-athlets::before {
     top: -90px;
-    left: -424px;
+    left: -450px;
     width: 434px;
     height: 699px;
     background: url("../images/athlets-768.png") no-repeat
@@ -371,7 +368,7 @@ a {
 
   .container-image-players::before {
     top: -155px;
-    right: -545px;
+    right: -560px;
     width: 690px;
     height: 565px;
     background: url("../images/players-768.png") no-repeat;
