@@ -56,7 +56,7 @@ a {
   padding: 33px 0 84px;
 
   color: #ffffff;
-  background: #071441 url("../images/header-background.jpg") no-repeat;
+  background: #090a36 url("../images/header-background.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -125,12 +125,12 @@ a {
 }
 
 .link:active {
-  color: #071441;
+  color: #090a36;
   background-color: #ffffff;
 }
 
 .link:active .link-icon {
-  fill: #071441;
+  fill: #090a36;
 }
 
 .link-paragraph {
@@ -148,10 +148,11 @@ a {
 /*--Athlets--*/
 
 .section-title {
-  margin-top: 20px;
+  margin-top: 16px;
 
   font-weight: 700;
   font-size: 50px;
+  line-height: 1.2;
   text-transform: uppercase;
 
   color: #e7e7e7;
@@ -170,36 +171,90 @@ a {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 174px;
-  height: 281px;
-  background: url("../images/athlets.png") no-repeat;
   transform: translateX(-50%);
 }
 
-.section-item {
-  position: relative;
-  padding: 60px 0 50px;
+.athlets-list::before {
+  width: 174px;
+  height: 281px;
+  background: url("../images/athlets.png") no-repeat;
 }
 
-.section-item::before {
-  content: "0" counter(list);
-  counter-increment: list;
-  position: absolute;
-  top: 0;
-  left: 0;
+.players-list::before {
+  top: 8px;
+  width: 302px;
+  height: 248px;
+  background: url("../images/players.png") no-repeat;
+}
 
-  font-weight: 700;
-  font-size: 14px;
-
-  border-bottom: 4px solid #5e3db3;
+.section-item {
+  padding: 60px 0 50px;
 }
 
 .first-item {
   padding-top: 80px;
+
+  background-color: #fafafa;
 }
 
+.second-item {
+  background-color: #f5f4f9;
+}
 
+.third-item {
+  background-color: #5e3db3;
+}
 
+.section-subtitle {
+  position: relative;
+  padding-left: 25px;
+
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  color: #c1c1c1;
+}
+
+.section-subtitle::before {
+  content: "0" counter(list);
+  counter-increment: list;
+  position: absolute;
+  top: 3px;
+  left: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.46;
+
+  color: #000000;
+
+  border-bottom: 4px solid #5e3db3;
+}
+
+.section-paragraph {
+  margin-top: 20px;
+
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.light-border::before {
+  border-color: #ffffff;
+}
+
+.dark-background {
+  background-color: #090a36;
+}
+
+.violet-number::before {
+  color: #5e3db3;
+}
+
+.section-paragraph-light {
+  color: #ffffff;
+}
 
 /*--Media-queries--*/
 
@@ -253,11 +308,11 @@ a {
 
   .link:hover {
     background-color: #ffffff;
-    color: #071441;
+    color: #090a36;
   }
 
   .link:hover .link-icon {
-    fill: #071441;
+    fill: #090a36;
   }
 
   .link-paragraph {
