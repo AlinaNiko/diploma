@@ -50,6 +50,16 @@ a {
 }
 
 
+/*--Common--*/
+
+.container {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
 /*--Main-header--*/
 
 .main-header {
@@ -58,13 +68,6 @@ a {
   color: #ffffff;
   background: #090a36 url("../images/header-background.jpg") no-repeat;
   background-size: cover;
-}
-
-.container {
-  width: 100%;
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .logo-wrapper {
@@ -144,7 +147,6 @@ a {
 }
 
 
-/*--Main-content--*/
 /*--Athlets/Players--*/
 
 .section-title {
@@ -180,12 +182,14 @@ a {
 .container-image-athlets::before {
   width: 174px;
   height: 281px;
+
   background: url("../images/athlets.png") no-repeat;
 }
 
 .container-image-players::before {
   width: 302px;
   height: 248px;
+
   background: url("../images/players.png") no-repeat;
 }
 
@@ -209,6 +213,7 @@ a {
 
 .section-subtitle {
   position: relative;
+
   padding-left: 25px;
 
   font-weight: 700;
@@ -220,8 +225,6 @@ a {
 }
 
 .section-subtitle::before {
-  content: "0" counter(list);
-  counter-increment: list;
   position: absolute;
   top: 3px;
   left: 0;
@@ -231,6 +234,9 @@ a {
   line-height: 1.46;
 
   color: #000000;
+
+  content: "0" counter(list);
+  counter-increment: list;
 }
 
 .section-subtitle::after {
@@ -239,6 +245,7 @@ a {
   position: absolute;
   top: 22px;
   left: 0;
+
   width: 16px;
   height: 4px;
 
@@ -271,58 +278,36 @@ a {
 
 
 /*--Steps--*/
+
 .steps-list {
   max-width: 1920px;
   margin: 0 auto;
+
   counter-reset: list;
 }
 
-/* Фоновые изображения для блока steps
-
-.steps-item {
-  position: relative;
-  padding: 351px 0 77px;
-}
-
-.steps-item::before {
-  content: "";
+.image-wrapper {
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 351px;
+  min-height: 351px;
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-size: 0;
 }
-
-.step-be-active::before {
-  background-image: url("../images/be-active-640.jpg");
-}
-
-.step-find-contact::before {
-  background-image: url("../images/find-contact-640.jpg");
-}
-
-.step-work-it::before {
-  background-image: url("../images/work-it-640.jpg");
-}
-*/
 
 .image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .container-steps {
-  padding-bottom: 80px;
+  padding: 33px 0 77px;
+}
+
+.container-step-work-it {
+  padding-bottom: 67px;
 }
 
 .steps-subtitle {
   position: relative;
-  margin-top: 30px;
 
   font-weight: 700;
   font-size: 28px;
@@ -333,11 +318,10 @@ a {
 }
 
 .steps-subtitle::before {
-  content: "0" counter(list);
-  counter-increment: list;
   position: absolute;
   top: -90px;
   left: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,6 +334,9 @@ a {
 
   color: #ffffff;
   background-color: #5e3db3;
+
+  content: "0" counter(list);
+  counter-increment: list;
 }
 
 .steps-subtitle::after {
@@ -358,6 +345,7 @@ a {
   position: absolute;
   top: -45px;
   left: 27px;
+
   width: 16px;
   height: 4px;
 
@@ -373,23 +361,27 @@ a {
 }
 
 
-/*--Media-queries--*/
+/*------------------------------------------Media-queries------------------------------------------*/
 
 @media (min-width: 641px) {
-  /*--Main-header--*/
-  .main-header {
-    padding: 39px 0 92px;
-  }
+
+  /*--Common--*/
 
   .container {
     max-width: 768px;
     padding: 0 32px;
   }
 
+
+  /*--Main-header--*/
+
+  .main-header {
+    padding: 39px 0 92px;
+  }
+
   .title {
     max-width: 600px;
     margin-top: 172px;
-
 
     font-weight: 700;
     font-size: 64px;
@@ -437,8 +429,9 @@ a {
     margin-left: 27px;
   }
 
-  /*--Main-content--*/
+
   /*--Athlets/Players--*/
+
   .container-athlets {
     max-width: 443px;
     margin-left: auto;
@@ -450,13 +443,14 @@ a {
   }
 
   .section-title {
-    margin-top: 76px;
+    margin-top: 80px;
 
     font-size: 80px;
     line-height: 0.75;
   }
 
   .section-list {
+    margin-top: 20px;
     padding-top: 0;
   }
 
@@ -476,21 +470,25 @@ a {
   .container-image-athlets::before {
     top: -90px;
     left: -450px;
+
     width: 434px;
     height: 699px;
+
     background: url("../images/athlets-768.png") no-repeat
   }
 
   .container-image-players::before {
     top: -155px;
     right: -560px;
+
     width: 690px;
     height: 565px;
+
     background: url("../images/players-768.png") no-repeat;
   }
 
   .section-item {
-    padding: 35px 0;
+    padding: 40px 0 35px;
   }
 
   .first-item {
@@ -512,6 +510,7 @@ a {
   .section-subtitle::after {
     top: 27px;
     left: 0;
+
     width: 21px;
     height: 5px;
   }
@@ -523,19 +522,27 @@ a {
 
 
   /*--Steps--*/
+
   .container-steps {
-    padding-bottom: 100px;
+    padding: 70px 0 100px;
+  }
+
+  .container-step-be-active {
+    padding-top: 80px;
+  }
+
+  .container-step-find-contact {
+    padding-bottom: 110px;
   }
 
   .steps-subtitle {
-    margin-top: 80px;
-
     font-size: 80px;
     line-height: 0.9;
   }
 
   .steps-subtitle::before {
     top: -160px;
+
     width: 116px;
     height: 116px;
 
@@ -545,50 +552,33 @@ a {
   .steps-subtitle::after {
     top: -85px;
     left: 44px;
+
     width: 28px;
     height: 5px;
   }
 
   .steps-paragraph {
-    margin-top: 15px;
+    margin-top: 30px;
 
     font-size: 24px;
     line-height: 1.2;
   }
-
-/* Фоновые изображения для блока steps
-  .steps-item {
-    padding: 584px 0 100px;
-  }
-
-  .steps-item::before {
-    height: 584px;
-  }
-
-  .step-be-active::before {
-    background-image: url("../images/be-active-768.jpg");
-  }
-
-  .step-find-contact::before {
-    background-image: url("../images/find-contact-768.jpg");
-  }
-
-  .step-work-it::before {
-    background-image: url("../images/work-it-768.jpg");
-  }
-  */
 }
 
 
 @media (min-width: 961px) {
-  /*--Main-header--*/
-  .main-header {
-    padding: 45px 0 110px;
-  }
+
+  /*--Common--*/
 
   .container {
     max-width: 1558px;
-    padding: 0 15px;
+  }
+
+
+  /*--Main-header--*/
+
+  .main-header {
+    padding: 45px 0 110px;
   }
 
   .main-header {
@@ -614,7 +604,7 @@ a {
     margin-top: 195px;
   }
 
-  /*--Main-content--*/
+
   /*--Athlets/Players--*/
 
   .container-athlets {
@@ -641,16 +631,20 @@ a {
   .container-image-athlets::before {
     top: -250px;
     left: -600px;
+
     width: 566px;
     height: 908px;
+
     background: url("../images/athlets-1920.png") no-repeat;
   }
 
   .container-image-players::before {
     top: -255px;
     right: -795px;
+
     width: 991px;
     height: 815px;
+
     background: url("../images/players-1920.png") no-repeat;
   }
 
@@ -673,27 +667,156 @@ a {
     font-size: 20px;
     line-height: 1.4;
   }
+}
+
+
+@media (min-width: 1025px) {
+
+  /*--Steps--*/
+
+  .steps-wrapper {
+    display: flex;
+  }
+
+  .container-steps {
+    margin: auto 0;
+    padding: 70px 0 40px;
+  }
+
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+  }
+
+  .steps-item {
+    display: flex;
+  }
+
+  .image-wrapper,
+  .steps-wrapper {
+    width: 50%;
+  }
+
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .steps-item:nth-child(even) .image-wrapper {
+    order: 1;
+  }
+
+  .steps-item:nth-child(odd) .steps-wrapper {
+    margin-left: 0;
+    padding-left: 100px;
+  }
+
+  .steps-item:nth-child(even) .steps-wrapper {
+    margin-right: 0;
+    padding-right: 100px;
+  }
+
+  .steps-wrapper {
+    max-width: 740px;
+  }
+
+  .steps-subtitle::before {
+    top: -20px;
+    left: -158px;
+  }
+
+  .steps-subtitle::after {
+    top: 55px;
+    left: -114px;
+  }
+
+  .steps-item:nth-child(even) .steps-subtitle::before {
+    right: -158px;
+    left: auto;
+  }
+
+  .steps-item:nth-child(even) .steps-subtitle::after {
+    top: 55px;
+    right: -114px;
+    left: auto;
+  }
+}
+
+
+@media (min-width: 1558px) {
+
+  /*--Common--*/
+
+  .container {
+    padding: 0 15px;
+  }
 
 
   /*--Steps--*/
-  /* Фоновые изображения для блока steps
-  .steps-item {
-    padding: 584px 0 77px;
+
+  .container-step-be-active .steps-paragraph {
+    margin-top: 110px;
   }
 
-  .steps-item::before {
-    height: 584px;
+  .container-step-find-contact .steps-paragraph {
+    margin-top: 65px;
   }
 
-  .step-be-active::before {
-    background-image: url("../images/be-active-768.jpg");
+  .container-step-work-it .steps-paragraph {
+    margin-top: 100px;
   }
 
-  .step-find-contact::before {
-    background-image: url("../images/find-contact-768.jpg");
+  .steps-subtitle::before {
+    top: 50%;
+    left: -214px;
+    transform: translateY(-50%);
+
+    width: 168px;
+    height: 155px;
   }
 
-  .step-work-it::before {
-    background-image: url("../images/work-it-768.jpg");
-  }*/
+  .steps-item:nth-child(odd) .steps-wrapper {
+    margin-left: 0;
+    padding-left: 130px;
+  }
+
+  .steps-item:nth-child(even) .steps-wrapper {
+    margin-right: 0;
+    padding-right: 130px;
+  }
+
+  .steps-subtitle::after {
+    left: -145px;
+  }
+
+  .steps-item:nth-child(even) .steps-subtitle::before {
+    right: -214px;
+  }
+
+  .steps-item:nth-child(even) .steps-subtitle::after {
+    right: -144px;
+  }
+}
+
+
+@media (min-width: 1920px) {
+
+  /*--Steps--*/
+
+  .container-steps {
+    padding-top: 250px;
+  }
+
+  .container-step-be-active {
+    padding-bottom: 240px;
+  }
+
+  .container-step-find-contact {
+    padding-bottom: 280px;
+  }
+
+  .container-step-work-it {
+    padding-bottom: 220px;
+  }
 }
