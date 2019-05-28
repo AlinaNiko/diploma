@@ -59,45 +59,14 @@ a {
   padding: 0 20px;
 }
 
-
-/*--Main-header--*/
-
-.main-header {
-  padding: 33px 0 84px;
-
-  color: #ffffff;
-  background: #090a36 url("../images/header-background.jpg") no-repeat;
-  background-size: cover;
-}
-
 .logo-wrapper {
   display: block;
   text-align: center;
 }
 
-.title {
-  max-width: 280px;
-  margin-top: 133px;
-  margin-right: auto;
-  margin-left: auto;
-
-  font-weight: 700;
-  font-size: 28px;
-  text-transform: uppercase;
-}
-
-.title-second-string {
-  display: block;
-  margin-top: 20px;
-  margin-left: 44px;
-}
-
-.links-list {
-  margin-top: 80px;
-}
-
-.links-item:not(:first-of-type) {
-  margin-top: 14px;
+.logo-image {
+  width: 133px;
+  height: 36px;
 }
 
 .link {
@@ -144,6 +113,41 @@ a {
   display: block;
 
   font-weight: 700;
+}
+
+/*--Main-header--*/
+
+.main-header {
+  padding: 33px 0 84px;
+
+  color: #ffffff;
+  background: #090a36 url("../images/header-background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.title {
+  max-width: 280px;
+  margin-top: 133px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.title-second-string {
+  display: block;
+  margin-top: 20px;
+  margin-left: 44px;
+}
+
+.links-list {
+  margin-top: 80px;
+}
+
+.links-item:not(:first-of-type) {
+  margin-top: 14px;
 }
 
 
@@ -361,6 +365,65 @@ a {
 }
 
 
+/*--Main-footer--*/
+
+.main-footer {
+  padding: 100px 0 10px;
+
+  color: #ffffff;
+  background: #090a36 url("../images/footer-background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.app-logo-wrapper {
+  display: flex;
+  width: 72px;
+  height: 74px;
+  margin: 0 auto;
+
+  background-color: #5e3db3;
+  background: linear-gradient(to top, #50329c, #7751db);
+  border-radius: 20px;
+}
+
+.app-logo-image {
+  width: 60px;
+  height: 49px;
+  margin: auto;
+}
+
+.footer-title {
+  margin-top: 55px;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 1.6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-title-small {
+  display: block;
+  margin-top: 10px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.7px;
+
+  color: #9b8dc3;
+}
+
+.footer-links-list {
+  margin-top: 75px;
+}
+
+.footer-logo-wrapper {
+  margin-top: 80px;
+}
+
+
 /*------------------------------------------Media-queries------------------------------------------*/
 
 @media (min-width: 641px) {
@@ -372,11 +435,34 @@ a {
     padding: 0 32px;
   }
 
+  .logo-image {
+    width: 205px;
+    height: 56px;
+  }
+
+  .link {
+    min-width: 310px;
+    padding: 16px 50px;
+
+    font-size: 14px;
+  }
+
+  .link-icon {
+    width: 41px;
+    height: 45px;
+  }
+
+   .link-paragraph {
+    margin-left: 27px;
+  }
+
 
   /*--Main-header--*/
 
   .main-header {
     padding: 39px 0 92px;
+
+    background-image: url("../images/header-background-768.jpg");
   }
 
   .title {
@@ -390,47 +476,6 @@ a {
   .title-second-string {
     margin-top: 5px;
     margin-left: 100px;
-  }
-
-  .links-list {
-    display: flex;
-    justify-content: center;
-    margin-top: 294px;
-  }
-
-  .links-item:not(:first-of-type) {
-    margin-top: 0;
-    margin-left: 30px;
-  }
-
-  .link {
-    justify-content: center;
-    min-width: 310px;
-    padding: 16px 36px;
-
-    font-size: 14px;
-  }
-
-  .link-icon {
-    width: 41px;
-    height: 45px;
-  }
-
-  .link:hover,
-  .link:active,
-  .link:focus{
-    background-color: #ffffff;
-    color: #090a36;
-  }
-
-  .link:hover .link-icon,
-  .link:active .link-icon,
-  .link:focus .link-icon{
-    fill: #090a36;
-  }
-
-  .link-paragraph {
-    margin-left: 27px;
   }
 
 
@@ -478,7 +523,7 @@ a {
     width: 434px;
     height: 699px;
 
-    background: url("../images/athlets-768.png") no-repeat
+    background-image: url("../images/athlets-768.png");
   }
 
   .container-image-players::before {
@@ -488,7 +533,7 @@ a {
     width: 690px;
     height: 565px;
 
-    background: url("../images/players-768.png") no-repeat;
+    background-image: url("../images/players-768.png");
   }
 
   .section-item {
@@ -567,6 +612,82 @@ a {
     font-size: 24px;
     line-height: 1.2;
   }
+
+
+  /*--Main-footer--*/
+
+  .main-footer {
+    padding: 125px 0 25px;
+
+    background-image: url("../images/footer-background-768.jpg");
+  }
+
+  .app-logo-wrapper {
+    width: 130px;
+    height: 137px;
+  }
+
+  .app-logo-image {
+    width: 106px;
+    height: 87px;
+  }
+
+  .footer-title {
+    margin-top: 70px;
+
+    font-size: 80px;
+    letter-spacing: 3px;
+  }
+
+  .footer-title-small {
+    margin-top: 15px;
+
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+
+  .footer-links-list {
+    margin-top: 285px;
+  }
+
+  .footer-logo-wrapper {
+    margin-top: 55px;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+/*--Common--*/
+
+  .links-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 294px;
+  }
+
+  .links-item:not(:first-of-type) {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+
+  .link {
+    justify-content: center;
+    padding: 16px 36px;
+  }
+
+  .link:hover,
+  .link:active,
+  .link:focus{
+    background-color: #ffffff;
+    color: #090a36;
+  }
+
+  .link:hover .link-icon,
+  .link:active .link-icon,
+  .link:focus .link-icon{
+    fill: #090a36;
+  }
 }
 
 
@@ -578,14 +699,16 @@ a {
     max-width: 1558px;
   }
 
+  .logo-image {
+    width: 191px;
+    height: 52px;
+  }
 
   /*--Main-header--*/
 
   .main-header {
     padding: 45px 0 110px;
-  }
 
-  .main-header {
     background-image: url("../images/header-background-1920.jpg");
   }
 
@@ -639,17 +762,17 @@ a {
     width: 566px;
     height: 908px;
 
-    background: url("../images/athlets-1920.png") no-repeat;
+    background-image: url("../images/athlets-1920.png");
   }
 
   .container-image-players::before {
-    top: -255px;
+    top: -265px;
     right: -795px;
 
     width: 991px;
     height: 815px;
 
-    background: url("../images/players-1920.png") no-repeat;
+    background-image: url("../images/players-1920.png");
   }
 
   .section-list {
@@ -670,6 +793,47 @@ a {
   .section-paragraph {
     font-size: 20px;
     line-height: 1.4;
+  }
+
+
+  /*--Main-footer--*/
+
+  .main-footer {
+    padding: 230px 0 50px;
+
+    background-image: url("../images/footer-background-1920.jpg");
+  }
+
+  .footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .app-logo-wrapper {
+    margin-right: 35px;
+    margin-left: 0;
+  }
+
+  .footer-title {
+    margin-top: 0;
+
+    text-align: left;
+  }
+
+  .footer-title-small {
+    margin-top: 0;
+
+    font-size: 30px;
+  }
+
+  .footer-links-list {
+    margin-top: 150px;
+  }
+
+  .footer-logo-wrapper {
+    margin-top: 260px;
   }
 }
 
