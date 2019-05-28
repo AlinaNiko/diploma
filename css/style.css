@@ -416,12 +416,16 @@ a {
     height: 45px;
   }
 
-  .link:hover {
+  .link:hover,
+  .link:active,
+  .link:focus{
     background-color: #ffffff;
     color: #090a36;
   }
 
-  .link:hover .link-icon {
+  .link:hover .link-icon,
+  .link:active .link-icon,
+  .link:focus .link-icon{
     fill: #090a36;
   }
 
