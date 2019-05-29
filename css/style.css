@@ -22,7 +22,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
   clip: rect(0 0 0 0);
-  clip-path: inset(0,0,0,0);
+  clip-path: inset(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -330,9 +330,7 @@ a {
 
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 1.5px;
-
 }
-
 
 .steps-paragraph {
   margin-top: 15px;
@@ -507,7 +505,6 @@ a {
     left: auto;
     transform: translateX(0);
   }
-
 
   .order-number {
     margin-top: 5px;
