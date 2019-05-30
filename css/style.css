@@ -59,9 +59,10 @@ a {
   padding: 0 20px;
 }
 
-.logo-wrapper {
-  display: block;
-  text-align: center;
+.logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-image {
@@ -234,7 +235,7 @@ a {
   width: 16px;
   height: 4px;
 
-  border-radius: 1.5px;
+  border-radius: 2px;
   background-color: #5e3db3;
 }
 
@@ -329,7 +330,7 @@ a {
   height: 4px;
 
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 1.5px;
+  border-radius: 2px;
 }
 
 .steps-paragraph {
@@ -394,7 +395,7 @@ a {
   margin-top: 75px;
 }
 
-.footer-logo-wrapper {
+.footer-logo-link {
   margin-top: 80px;
 }
 
@@ -606,7 +607,7 @@ a {
     margin-top: 285px;
   }
 
-  .footer-logo-wrapper {
+  .footer-logo-link {
     margin-top: 55px;
   }
 }
@@ -771,7 +772,7 @@ a {
     margin-top: 150px;
   }
 
-  .footer-logo-wrapper {
+  .footer-logo-link {
     margin-top: 260px;
   }
 }
