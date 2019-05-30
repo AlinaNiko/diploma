@@ -376,7 +376,7 @@ a {
   font-weight: 700;
   font-size: 32px;
   line-height: 1;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -388,7 +388,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 
   color: #9b8dc3;
 }
